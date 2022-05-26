@@ -1,1 +1,55 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --background-color: #280339;
+    --background-light: #b3b2b2;
+    --background-dark: #111111;
+    --color-title: #401155;
+    --color-subtitle: #794A8D;
+    --color-content: #515151;
+    --color-success: #198754;
+    --background-success: #115535;
+    --color-warning: #ffc107;
+    --background-warning: #a07906;
+    --color-danger: #dc3545;
+    --background-danger: #80222c;
+    --color-light: #ffffff;
+    -color-dark: #111111;
+}
+
+html, body, button, a, input, textarea, select{
+    font-family: 'Spinnaker', sans-serif;
+}
+
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    background-color: var(--background-color);
+}
+
+app-root{
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 500px;
+    height: auto;
+    border: 2px solid var(--color-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 10px;
+}
