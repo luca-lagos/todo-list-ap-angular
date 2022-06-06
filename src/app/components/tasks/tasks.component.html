@@ -1,4 +1,8 @@
-<div class="task-panel">
+<div *ngIf="tasks == null; then showEmpty; else showTasks"></div>
+<ng-template #showEmpty>
+  <h2>Hello word</h2>
+</ng-template>
+<ng-template #showTasks class="task-panel">
   <div class="task-card" *ngFor="let task of tasks">
     <div>
       <h2>{{ task.text }}</h2>
@@ -6,4 +10,4 @@
     </div>
     <a href="#"><i class="fa-solid fa-xmark"></i></a>
   </div>
-</div>
+</ng-template>
