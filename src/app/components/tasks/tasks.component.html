@@ -1,13 +1,22 @@
-<div *ngIf="tasks == null; then showEmpty; else showTasks"></div>
-<ng-template #showEmpty>
-  <h2>Hello word</h2>
-</ng-template>
-<ng-template #showTasks class="task-panel">
-  <div class="task-card" *ngFor="let task of tasks">
-    <div>
-      <h2>{{ task.text }}</h2>
-      <p>{{ task.date }}</p>
-    </div>
-    <a href="#"><i class="fa-solid fa-xmark"></i></a>
+<div>
+  <div class="task-panel">
+    <app-form (onAddTask)="addTask($event)"></app-form>
+    <div *ngIf="tasks === undefined || tasks.length == 0; then showEmpty else showTasks"></div>
+    <ng-template #showEmpty>
+      <div class="task-empty">
+        <i class="fa-solid fa-face-meh"></i>
+        <p>The task list is empty.</p>
+      </div>
+    </ng-template>
+    <ng-template #showTasks>
+      <app-item
+      *ngFor="let task of tasks"
+      [task]="task"
+      (onDeleteTask)="deleteTask(task)"
+      (onChangeReminderTask)="changeReminderTask(task)"
+    >
+    </app-item>
+    </ng-template>
+    
   </div>
-</ng-template>
+</div>

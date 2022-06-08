@@ -1,55 +1,79 @@
 /* You can add global styles to this file, and also import other style files */
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-:root{
-    --background-color: #280339;
-    --background-light: #b3b2b2;
-    --background-dark: #111111;
-    --color-title: #401155;
-    --color-subtitle: #794A8D;
-    --color-content: #515151;
-    --color-success: #198754;
-    --background-success: #115535;
-    --color-warning: #ffc107;
-    --background-warning: #a07906;
-    --color-danger: #dc3545;
-    --background-danger: #80222c;
-    --color-light: #ffffff;
-    -color-dark: #111111;
+:root {
+  --background-color: #280339;
+  --background-light: #b3b2b2;
+  --background-dark: #111111;
+  --color-title: #401155;
+  --color-subtitle: #794a8d;
+  --color-content: #797676;
+  --color-success: #198754;
+  --background-success: #115535;
+  --color-warning: #ffc107;
+  --background-warning: #a07906;
+  --color-danger: #dc3545;
+  --background-danger: #80222c;
+  --color-light: #ffffff;
+  --color-dark: #111111;
+  --background-reminder-success: linear-gradient(
+    90deg,
+    rgba(179, 178, 178, 1) 83%,
+    rgba(17, 85, 53, 1) 83%,
+    rgba(25, 135, 84, 1) 92%
+  );
+  --background-reminder-warning: linear-gradient(
+    90deg,
+    rgba(179, 178, 178, 1) 83%,
+    rgba(160, 121, 6, 1) 83%,
+    rgba(255, 193, 7, 1) 97%
+  );
+  --background-reminder-danger: linear-gradient(
+    90deg,
+    rgba(179, 178, 178, 1) 83%,
+    rgba(128, 34, 44, 1) 83%,
+    rgba(220, 53, 69, 1) 92%
+  );
 }
 
-html, body, button, a, input, textarea, select{
-    font-family: 'Spinnaker', sans-serif;
+html,
+body,
+button,
+a,
+input,
+textarea,
+select {
+  font-family: "Spinnaker", sans-serif;
 }
 
-body{
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    margin: auto;
-    background-color: var(--background-color);
+body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  background-color: var(--background-color);
 }
 
-app-root{
-    margin: auto;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+app-root {
+  margin: auto;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.container{
-    width: 500px;
-    height: auto;
-    border: 4px solid var(--color-light);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    border-radius: 10px;
+.container {
+  width: 500px;
+  height: auto;
+  border: 4px solid var(--color-light);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 10px;
 }

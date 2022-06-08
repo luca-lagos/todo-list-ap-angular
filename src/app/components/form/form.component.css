@@ -1,0 +1,92 @@
+form{
+    padding: 0px 15px 15px 15px;
+}
+
+form .form-control, .form-reminder, .form-buttons{
+    margin-bottom: 15px;
+}
+
+form .form-control label, .form-reminder label, .form-buttons label{
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--color-subtitle);
+}
+
+form .form-control{
+    display: flex;
+    flex-direction: column;
+}
+
+form .form-control input{
+    padding: 7px 12px 7px 12px;
+    font-size: 15px;
+    border: 2px solid var(--color-subtitle);
+    border-radius: 5px;
+}
+
+form .form-control input:focus,
+form .form-control input:active{
+    outline: none;
+}
+
+form .form-reminder{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+form .form-reminder input{
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+form .form-buttons{
+    display: flex;
+    flex-direction: row;
+    /*justify-content: space-between;*/
+    justify-content: center;
+}
+
+form .form-buttons button, input[type="submit"]{
+    padding: 10px 30px 10px 30px;
+    width: 50%;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 0;
+    background-color: var(--color-subtitle);
+    color: var(--color-light);
+    cursor: pointer;
+    box-shadow: 4px 4px 0px var(--color-title);
+    transition: all 0.17s ease;
+}
+
+form .form-buttons button{
+    background-color: var(--color-content);
+    color: var(--color-dark);
+    box-shadow: 4px 4px 0px var(--background-dark);
+}
+
+form .form-buttons input:hover{
+    background-color: var(--color-success);
+    color: var(--color-light);
+    box-shadow: 4px 4px 0px var(--background-success);
+}
+
+form .form-buttons input:active{
+    transform: translate(4px, 4px);
+    box-shadow: 0px 0px 0px var(--background-success);
+}
+
+form .form-buttons button:hover{
+    background-color: var(--color-danger);
+    color: var(--color-light);
+    box-shadow: 4px 4px 0px var(--background-danger);
+}
+
+form .form-buttons button:active{
+    transform: translate(4px, 4px);
+    box-shadow: 0px 0px 0px var(--background-danger);
+}

@@ -1,4 +1,4 @@
 <div class="task-header">
-    <h1>My todo list</h1>
-    <a href="#" >Add task</a>
+  <h1>My todo list</h1>
+  <app-button (toggleAddTask)="toggleAddTask()" text="{{ showAddTask ? 'Back down' : 'Add task' }}" formActive="{{ showAddTask ? 'form_active' : ''}}"></app-button>
 </div>

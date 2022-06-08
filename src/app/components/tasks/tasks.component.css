@@ -1,69 +1,25 @@
-.task-panel{
+.task-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 22px 15px 0px 15px;
+  background-color: var(--color-light);
+}
+
+.task-empty{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 15px;
-    background-color: var(--color-light);
-}
-
-.task-panel .task-card{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--background-light);
-    margin-bottom: 15px;
-    padding: 10px;
-    border-radius: 5px;
-    border: 5px solid transparent;
-}
-
-.task-panel .task-card:last-child{
-    margin-bottom: 0;
-}
-
-.task-panel .task-card div h2{
-    font-size: 22px;
-    font-weight: bold;
-    color: var(--color-title);
-    margin-bottom: 5px;
-}
-
-.task-panel .task-card div p{
-    font-size: 15px;
-    font-weight: 400;
+    padding: 15px 15px 30px 15px;
     color: var(--color-subtitle);
 }
 
-.task-panel .task-card a{
-    background-color: var(--color-subtitle);
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    font-size: 20px;
-    border-radius: 25px;
-    box-shadow: 3px 2px 0px var(--color-title);
-    transition: all 0.17s ease;
+.task-empty i{
+    font-size: 65px;
+    margin-bottom: 15px;
 }
 
-.task-panel .task-card a i{
-    color: var(--color-title);
+.task-empty p{
+    font-weight: 700;
 }
-
-.task-panel .task-card a:hover{
-    background-color: var(--color-danger);
-     box-shadow: 3px 2px 0px var(--background-danger);
-}
-
-.task-panel .task-card a:hover i{
-    color: var(--color-light);
-}
-
-.task-panel .task-card a:active{
-    transform: translate(4px, 4px);
-    box-shadow: 0px 0px 0px var(--background-danger);
-}
-

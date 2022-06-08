@@ -1,0 +1,11 @@
+<div
+  class="task-card"
+  [ngClass]="{ reminder: task.reminder }"
+  (click)="onChangeReminder(task)"
+>
+  <div>
+    <h2>{{ task.text }}</h2>
+    <p>{{ task.date }}</p>
+  </div>
+  <button (click)="onDelete(task)"><i class="fa-solid fa-xmark"></i></button>
+</div>

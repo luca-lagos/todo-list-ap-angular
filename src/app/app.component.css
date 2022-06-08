@@ -1,0 +1,17 @@
+footer{
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--color-light);
+}
+
+footer a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--color-content);
+    transition: all .4s ease;
+}
+
+footer a:hover{
+    color: var(--color-warning);
+}

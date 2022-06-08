@@ -1,0 +1,61 @@
+.task-card {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background: var(--background-reminder-warning);
+  margin-bottom: 15px;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.task-card div h2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--color-title);
+  margin-bottom: 5px;
+}
+
+.task-card div p {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--color-subtitle);
+}
+
+.task-card button {
+  background-color: var(--color-subtitle);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 20px;
+  border: 0;
+  border-radius: 25px;
+  box-shadow: 3px 2px 0px var(--color-title);
+  cursor: pointer;
+  transition: all 0.17s ease;
+}
+
+.task-card button i {
+  color: var(--color-title);
+}
+
+.task-card button:hover {
+  background-color: var(--color-danger);
+  box-shadow: 3px 2px 0px var(--background-danger);
+}
+
+.task-card button:hover i {
+  color: var(--color-light);
+}
+
+.task-card button:active {
+  transform: translate(4px, 4px);
+  box-shadow: 0px 0px 0px var(--background-danger);
+}
+
+.reminder {
+  background: var(--background-reminder-success);
+}
